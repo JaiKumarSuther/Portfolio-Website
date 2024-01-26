@@ -4,62 +4,188 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
       <div class="container">
         <div class="navbar">
-            <div class="logo-container">
-                <img src="userAsset/NavLogo.jpg" alt="" class="logo">
-                <div class="logo-text">ai Kumar</div>
+          <div class="logo-container">
+            <img src="userAsset/NavLogo.jpg" alt="" class="logo" />
+            <div class="logo-text">ai Kumar</div>
+          </div>
+          <div class="nav-items">
+            <div><a href="#projects">Projects</a></div>
+            <div><a href="#skills">Skills</a></div>
+            <div><a href="#contact-me">Contact me</a></div>
+          </div>
+        </div>
+
+        <div class="hero-section">
+          <div class="absolute fadded-text">Jai Kumar</div>
+          <div class="hero-section-left">
+            <div class="hero-section-heading">Hi! Jai Kumar</div>
+            <div class="hero-section-heading hero-section-sub-heading">
+              I am a <span class="role"></span>
             </div>
-            <div class="nav-items">
-                <div><a href="#projects">Projects</a></div>
-                <div><a href="#skills">Skills</a></div>
-                <div><a href="#contact-me">Contact me</a></div>
+            <div class="hero-section-discription">
+              I am a software developer and this is my portfolio website. Here
+              you will learn about my journey as a software developer.
             </div>
+            <div class="btn-pink" id="button">Hire Me</div>
+          </div>
+          <div class="hero-section-right">
+            <div class="absolute icons icons-dots">
+              <img src="./userAsset/dots.png" alt="" />
+            </div>
+            <div class="absolute icons icons-cube">
+              <img src="./userAsset/cube.png" alt="" />
+            </div>
+            <div class="absolute icons icons-circle">
+              <img src="./userAsset/circle.png" alt="" />
+            </div>
+            <div class="absolute icons icons-zigzag">
+              <img src="./userAsset/zigzags.png" alt="" />
+            </div>
+            <div class="absolute icons icons-plus">
+              <img src="./userAsset/plus.png" alt="" />
+            </div>
+            <div class="user-image">
+              <img src="./userAsset/image.jpg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
-      <div class="hero-section">
-        <div class="absolute fadded-text">Jai Kumar</div>
-        <div class="hero-section-left">
-          <div class="hero-section-heading">Hi! Jai Kumar </div>
-          <div class="hero-section-heading hero-section-sub-heading">
-            I am a <span class="role"></span>
+      <div class="project-section">
+        <h2 class="page-header">Projects</h2>
+
+        <div class="project-container">
+          <div class="project-card" id="project1">
+            <div class="project-number project-number-right">01</div>
+            <div class="project-content project-content-left">
+              
+              <div class="project-skills-container">
+                <img class="project-skills" src="./stack/HTML.png" alt="" />
+                <img class="project-skills" src="./stack/CSS.png" alt="" />
+                <img class="project-skills" src="./stack/Javascript.svg" alt=""/>
+                <img class="project-skills" src="./stack/Express.png" alt="" />
+                <img class="project-skills" src="./stack/NextJsCircle.png" alt=""/>
+                <img class="project-skills" src="./stack/Tailwind.png" alt="" />
+                <img class="project-skills" src="./stack/NodeJs.svg" alt="" />
+                <img class="project-skills" src="./stack/MongoDB.svg" alt="" />
+                <img class="project-skills" src="./stack/Redux.svg" alt="" />
+                <img class="project-skills" src="./stack/Vercel.svg" alt="" />
+              </div>
+
+              <h2 class="project-heading">Tint & Orange</h2>
+              <div class="project-sub-heading project-sub-heading-one">
+                Its is a car modification copany which provide you sheets to
+                protect your car from scratch
+              </div>
+            
+            <div class="btn-group">
+              <button class="btn-pink btn-project">Read More</button>
+              <a href="">
+                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+              </a>
+              <a href="">
+                <i title="Live Link" class="fa-solid fa-link icon"></i>
+              </a>
+            </div>
+            </div>
           </div>
-          <div class="hero-section-discription">
-            I am a software developer and this is my portfolio website. Here you will 
-            learn about my journey as a software developer.
+          <div class="project-card" id="project2">
+            <div class="project-number project-number-left">02</div>
+            <div class="project-content project-content-right">
+              
+              <div class="project-skills-container">
+                <img class="project-skills" src="./stack/HTML.png" alt="" />
+                <img class="project-skills" src="./stack/CSS.png" alt="" />
+                <img class="project-skills" src="./stack/Javascript.svg" alt=""/>
+                <img class="project-skills" src="./stack/NextJsCircle.png" alt=""/>
+                <img class="project-skills" src="./stack/Tailwind.png" alt="" />
+                <img class="project-skills" src="./stack/Redux.svg" alt="" />
+                <img class="project-skills" src="./stack/Vercel.svg" alt="" />
+              </div>
+
+              <h2 class="project-heading">Breaking Copyrights</h2>
+              <div class="project-sub-heading">
+                A platform to download copyrights free youtube music
+              </div>
+              <div class="btn-group">
+                <button class="btn-pink btn-project">Read More</button>
+                <a href="">
+                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
+                <a href="">
+                  <i title="Live Link" class="fa-solid fa-link icon"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="btn-pink" id="button">Hire Me</div>
-        </div>
-        <div class="hero-section-right">
-          <div class="absolute icons icons-dots">
-            <img src="./userAsset/dots.png" alt="">
+          <div class="project-card" id="project3">
+            <div class="project-number project-number-right">03</div>
+            <div class="project-content project-content-left">
+              
+              <div class="project-skills-container">
+                <img class="project-skills" src="./stack/HTML.png" alt="" />
+                <img class="project-skills" src="./stack/CSS.png" alt="" />
+                <img class="project-skills" src="./stack/Javascript.svg" alt=""/>
+                <img class="project-skills" src="./stack/NextJsCircle.png" alt=""/>
+                <img class="project-skills" src="./stack/Tailwind.png" alt="" />
+                <img class="project-skills" src="./stack/Vercel.svg" alt="" />
+              </div>
+
+              <h2 class="project-heading">Isha Tattva</h2>
+              <div class="project-sub-heading">
+                A Website for interior designer to showcase her works and samples
+              </div>
+              <div class="btn-group">
+                <button class="btn-pink btn-project">Read More</button>
+                <a href="">
+                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
+                <a href="">
+                  <i title="Live Link" class="fa-solid fa-link icon"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="absolute icons icons-cube">
-            <img src="./userAsset/cube.png" alt="">
+          <div class="project-card" id="project4">
+            <div class="project-number project-number-left">04</div>
+            <div class="project-content project-content-right">
+              
+              <div class="project-skills-container" >
+                <img class="project-skills" src="./stack/NextJsCircle.png" alt=""/>
+                <img class="project-skills" src="./stack/Tailwind.png" alt="" />
+                <img class="project-skills" src="./stack/Vercel.svg" alt="" />
+              </div>
+
+              <h2 class="project-heading">Granit</h2>
+              <div class="project-sub-heading">
+                A architectural website to plan your building or home (Hebrew Language)
+              </div>
+              <div class="btn-group">
+                <button class="btn-pink btn-project">Read More</button>
+                <a href="">
+                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
+                <a href="">
+                  <i title="Live Link" class="fa-solid fa-link icon"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="absolute icons icons-circle">
-            <img src="./userAsset/circle.png" alt="">
-          </div>
-          <div class="absolute icons icons-zigzag">
-            <img src="./userAsset/zigzags.png" alt="">
-          </div>
-          <div class="absolute icons icons-plus">
-            <img src="./userAsset/plus.png" alt="">
-          </div>
-          <div class="user-image">
-            <img src="./userAsset/image.jpg" alt="">
-          </div>
+
+          
         </div>
       </div>
-
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
       var typeData = new Typed(".role", {
         strings: [
