@@ -20,6 +20,10 @@
     width: 1200px;
     margin: 0 auto;
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 .navbar {
     display: flex;
@@ -68,7 +72,7 @@ a {
 }
 
 .hero-section {
-    border: 1px solid black;
+    
     display: flex;
     position: relative;
     justify-content: center;
@@ -91,11 +95,11 @@ a {
 }
 
 .hero-section-left {
-    border: 1px solid black;
+    
     display: flex;
     width: 50%;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     gap: 2rem;
 
 }
@@ -159,7 +163,7 @@ a {
 
   .hero-section-right {
     position: relative;
-    border: 1px solid black;
+    
   }
 
   .absolute {
@@ -179,7 +183,7 @@ a {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-    /* border: 1px solid black; */
+
 
   }
 
@@ -208,6 +212,7 @@ a {
     animation-direction: alternate;
     animation-timing-function: linear;
   }
+
 
   @keyframes dots-animation {
     from {
@@ -252,6 +257,7 @@ a {
     animation-timing-function: linear;
 }
 
+
 @keyframes circle-animation {
     from {
         left: 0;
@@ -274,6 +280,7 @@ a {
     animation-direction: alternate;
     animation-timing-function: linear;
 }
+
 
 @keyframes zigzag-animation {
     from {
@@ -589,8 +596,10 @@ a {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 70%;
-    margin: 2rem 5rem;
+    width: 90%;
+    margin: 0;
+    align-items: start;
+    overflow: hidden;
 }
 .formfield-container {
     width: 100%;
@@ -601,7 +610,7 @@ a {
     height: 42px;
     padding: 0 2rem;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 0;
     box-shadow: 2px 2px 10px #1f1f1f;
     font-weight: 500;
     border: none;
@@ -756,7 +765,7 @@ footer {
 
         .fadded-text {
             font-size: 4rem;
-            bottom: -10%;
+            bottom: -14.5%;
             left: 5%;
         }
         .nav-items {
@@ -806,20 +815,40 @@ footer {
           font-size: 3em; /* Adjust contact heading font size */
           padding-top: 1rem; /* Adjust padding */
         }
+        .contactus-sub-heading {
+            font-size: 1.5em;
+        }
       
         .form {
-          width: 100%; /* Make form full width */
-          margin: 2rem 1rem; /* Adjust margin */
+          width: 90%;
+          align-items: start;
+          justify-content: start;
+        }
+        .formfield {
+            border-radius: 0;
+        }
+
+        .container {
+            width: 95%;
         }
         .hero-section-right {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+        .footer-faded-text {
+            font-size: 4em;
+        }
       }
-      @media (max-width: 500px) {
-        .nav-items {
-            padding: 0;
-            margin: 0;
+      @media (max-width: 700px) {
+        .footer-wrapper {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .fadded-text {
+            font-size: 4rem;
+            bottom: -14.2%;
+            left: 5%;
         }
       }
