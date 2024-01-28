@@ -23,6 +23,7 @@
 
 .navbar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
@@ -67,6 +68,7 @@ a {
 }
 
 .hero-section {
+    border: 1px solid black;
     display: flex;
     position: relative;
     justify-content: center;
@@ -89,7 +91,9 @@ a {
 }
 
 .hero-section-left {
+    border: 1px solid black;
     display: flex;
+    width: 50%;
     flex-direction: column;
     /* justify-content: center; */
     gap: 2rem;
@@ -112,8 +116,8 @@ a {
 }
 
 .hero-section-discription {
-    /* margin: 1rem; */
-    /* width: 70%; */
+    margin: 1rem;
+    width: 70%;
     font-weight: 500;
 }
 
@@ -155,6 +159,7 @@ a {
 
   .hero-section-right {
     position: relative;
+    border: 1px solid black;
   }
 
   .absolute {
@@ -724,5 +729,97 @@ footer {
       .project-card:hover .project-content {
         scale: 0.55;
       }
-  
-}
+      .hero-section {
+        gap: 0;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+          width: 95%; 
+        }
+
+    
+    }
+
+    @media screen and (max-width: 992px) {
+        .iam {
+            display: block;
+        }
+        .hero-section-sub-heading {
+            font-size: 35px;
+        }
+        .navbar {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fadded-text {
+            font-size: 4rem;
+            bottom: -10%;
+            left: 5%;
+        }
+        .nav-items {
+          padding: 0 2rem; /* Adjust padding for navigation items */
+        }
+      
+        .hero-section {
+          flex-direction: column-reverse; /* Stack hero section content vertically */
+          margin: 2rem auto; /* Adjust margin */
+        }
+      
+        .hero-section-left,
+        .hero-section-right {
+          width: 100%; /* Make hero section content full width */
+          /* text-align: center; Center align text */
+          padding: 1rem; /* Add padding */
+        }
+      
+        .user-image img {
+          width: 200px; /* Reduce image size */
+        }
+      
+        .hero-section-right .absolute.icons {
+          display: none; /* Hide absolute positioned icons */
+        }
+
+      
+        .skills-container {
+          flex-direction: column; /* Stack skills content vertically */
+          padding: 3rem 1rem; /* Adjust padding */
+        }
+      
+        .skill-container-left,
+        .skill-container-right {
+          width: 100%; /* Make skill containers full width */
+        }
+      
+        .skill-fade-text {
+          display: none; /* Hide fade text */
+        }
+      
+        .blob-style {
+          display: none; /* Hide blob style */
+        }
+      
+        .contactus-heading {
+          font-size: 3em; /* Adjust contact heading font size */
+          padding-top: 1rem; /* Adjust padding */
+        }
+      
+        .form {
+          width: 100%; /* Make form full width */
+          margin: 2rem 1rem; /* Adjust margin */
+        }
+        .hero-section-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      }
+      @media (max-width: 500px) {
+        .nav-items {
+            padding: 0;
+            margin: 0;
+        }
+      }
